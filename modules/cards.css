@@ -1,0 +1,41 @@
+#leaning-right{
+  color:#ff7675
+}
+#strongly-right{
+  color:#D91E18
+}
+#neutral{
+  color:#grey
+}
+#leaning-left{
+  color:#74b9ff
+}
+#strongly-left{
+  color:#0984e3
+}
+#source{
+	background-color: white
+}
+
+
+
+#positive{
+  color: #2ecc71
+}
+
+#negative{
+  color: #f8c291
+}
+
+#body{
+  background-color: #32CD32
+}
+
+#card-outline{
+  background-color: black;
+}
+
+body {
+    margin-right: 80PX;
+    margin-left: 80px;
+}

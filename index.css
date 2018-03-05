@@ -1,0 +1,54 @@
+div.slide-up {
+  height:200px;
+  overflow:hidden;
+}
+div.slide-up p {
+  animation: 10s slide-up;
+  margin-top:0%;
+}
+
+@keyframes slide-up {
+  from {
+    margin-top: 100%;
+    height: 300%;
+  }
+
+  to {
+    margin-top: 0%;
+    height: 100%;
+  }
+}
+
+.column {
+    float: left;
+    width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+#justify {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+#align-left {
+  text-align: left;
+  font-family: 'Alegreya', serif;
+        font-style: 'extra-bold';
+}
+
+#col-four {
+  float: left;
+  width: 25%;
+}
+
+#bias-rating{
+  text-align: right;
+  font-family: 'Alegreya', serif;
+        font-style: 'extra-bold';
+}

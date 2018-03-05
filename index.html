@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>RealNews</title>
+    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+  </head>
+  <body id="body">
+    <style>
+      #content {
+        font-family: 'Alegreya', serif;
+        font-style: 'extra-bold';
+      }
+      #title{
+        font-family: 'Roboto Slab',serif;
+      }
+    </style>
+    <!--Navbar-->
+    <a href="/index.html"><img src=res/img/navbarheader.jpg height="215.87" width="1440"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          News
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/pages/News/Top/Top.html">Top</a>
+          <a class="dropdown-item" href="/pages/News/Politics/Politics">Politics</a>
+          <a class="dropdown-item" href="/pages/News/Sports/Sports.html">Sports</a>
+          <a class="dropdown-item" href="/pages/News/Tech/Tech.html">Tech</a>
+        </div>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/pages/Rate/Rate/Rate.html">Rate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/Methodology/Methodology.html">Methodology</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--End Navbar-->
+    <!--JumboTron-->
+    <center>
+      <div class="jumbotron">
+        <h1 id="title" class="display-4">Welcome to Newsreel</h1>
+        <p class="lead" id="content">Real News, Real Time</p>
+        <hr class="my-4">
+        <p class="lead">
+          <a class="btn btn-light btn-lg" href="/pages/News/Top/Top.html" id="title" role="button">Read now</a>
+          <a class="btn btn-light btn-lg" href="#sources" id="title" role="button">Learn more</a>
+        </p>
+      </div>
+    <!--End JumboTron-->
+    </center>
+    <div class="row">
+      <div id="col-four">
+
+      </div>
+      <div id="col-four">
+          <br>
+          <br>
+          <br>
+          <br>
+          <img src="res/img/paper.jpg" width="350" height="300"/>
+          <br />
+          <br />
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br />
+          <img src='res/img/bias.png' width="350" height="200"/>
+          <br />
+          <br />
+          <br />
+          <br />
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <img src='res/img/sentiment.jpg' width="350" height="400"/>
+      </div>
+      <div id="col-four">
+        <br />
+        <br />
+        <div id="title"><h1 id="sources">Sources</h1></div>
+        <img src='res/img/Line.jpg' height='1' width='300'>
+        <p id="content">We pull news from over 5,000 reputable sources, some of which include CNN, NBC, NY Times, Huff Post, Washington Post,
+            LA Times, CBS, Fox News, BBC, and many others. Our primary methods of gathering stories, their authors, sources, and summaries area
+            web scraping and the Google News API. These methods provide us with all the content on the news portion of the site, and there is
+            no shortage! We are always looking to expand our list of sources, so please get in contact with us if you think we could add a source
+            to the <i>literally</i> thousands that we use already.
+          </p>
+        
+        <br />
+        <br />
+        <h1 id="title">Bias Rating</h1>
+        <img src='res/img/Line.jpg' height='1' width='300'>
+        <p id="content">
+          One of the main features of RealNews is the Bias Rating (BR) that each news source is categorized by.
+          The mission of RealNews is to provide customers with new perspective by providing them with certain
+          characteristics of the bias the news source they are reasing might contain. We determine these characteristics
+          through multiple methods, one of with is our community driven BR system. Major news sources are designated
+          a BR when they are added to our site, and after that, users can visit the <a href='/pages/Rate/Rate.html'>Rate</a> page
+          to either agree or disagree  with the current rating. If they disagree, they give their opinion by selecting on of the following:
+          Strongly Left, Leaning Left, Neutral, Leaning Right, Strongly Right. These ratings help our algorithm determine what the bias of
+          the source might actually be. To read more in detail about how we poll users and calculate bias ratings, visit the <a href="/pages/Methodology/Methodology.html">Methodology</a> page.
+        </p>
+        <br />
+        <br />
+        <h1 id="title">Sentiment Analysis</h1>
+        <img src='res/img/Line.jpg' height='1' width='300'>
+        <div id="content">
+          We use setiment analysis conducted on tweets across the world in order to provide the user
+          with information about how people are feeling about the source they are currently reading, in order
+          to allow the user to properly gauge the content of the article. We use twitter, because it's basically
+          a huge psychological database which is being constantly updated, so it gives us the best idea of how
+          people are feeling at that very moment. We use natural language processing through the textblob python library
+          to determine the sentiment of tweets in our dataset, and pass that forward to you through our databse in real-time so you
+          can understand how people are feeling about your source and if it's opinion or what it's stating is regarded as correct or good
+        </div>
+      </div>
+      <div id="col-four">
+
+      </div>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      
+    </div>
+    <center><img src='res/img/Line.jpg' height='1' width='600'></center>
+    <center>
+          <h5 id="title">Credits</h5>
+          <div id="content"><center><img src="res/img/footer.jpg" width="282.256" height="335.777"></center>
+          Frontend and Backend Engineering - <a href="https://www.prathamgandhi.tech">Pratham Gandhi</a>
+          <br>
+          Design and Illustration - Samuel Schuur
+        </center>
+        <br>
+        <br>
+    
+
+
+    <script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+    <script>
+      // Initialize Firebase
+      var config = {
+        apiKey: "AIzaSyDcU1bmBhiq1COObVoSMMQSKZKOS7EcAEw",
+        authDomain: "realnews-7759b.firebaseapp.com",
+        databaseURL: "https://realnews-7759b.firebaseio.com",
+        projectId: "realnews-7759b",
+        storageBucket: "realnews-7759b.appspot.com",
+        messagingSenderId: "737469584150"
+      };
+      firebase.initializeApp(config);
+    </script>
+    <script src="index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+    $(function() {
+        $('a[href*=#]:not([href=#])').click(function() {
+            var target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.substr(1) +']');
+            if (target.length) {
+                $('html,body').animate({
+                  scrollTop: target.offset().top
+                }, 1000);
+                return false;
+            }
+        });
+    });
+    </script>
+  </body>
+</html>

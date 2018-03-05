@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Top Stories</title>
+    <link rel="stylesheet" href="../../../modules/cards.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <style>
+      #news {
+        font-family: 'Alegreya', serif;
+        font-style: 'extra-bold';
+      }
+    </style>
+    <style>
+      #articletitle {
+        font-family: 'Roboto Slab',serif;
+        margin-left: 10px;    
+        margin-right: 10px;      }
+    </style>
+    <style>
+      #descriptionText {
+        margin-left: 10px; 
+        margin-right: 10px;      }
+    </style>
+    <style>
+      #pageHeader {
+        font-family: 'Roboto Slab',serif;      }
+    </style>
+    <style>
+      #news {
+          margin-right: 80PX;
+          margin-left: 80px;
+      }
+    </style>
+    <style>
+      #margin {
+          margin-right: 80PX;
+          margin-left: -1px;
+      }
+    </style>
+    <style>
+      #readarticle {
+        background-color: #95a5a6;
+      }
+    </style>
+    <style>
+      #content {
+        font-family: 'Alegreya', serif;
+        font-style: 'extra-bold';
+      }
+      #title{
+        font-family: 'Roboto Slab',serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+    <a href="/index.html"><img src=/res/img/navbarheader.jpg height="215.87" width="1440"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          News
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/pages/News/Top/Top.html">Top</a>
+          <a class="dropdown-item" href="/pages/News/Politics/Politics">Politics</a>
+          <a class="dropdown-item" href="/pages/News/Sports/Sports.html">Sports</a>
+          <a class="dropdown-item" href="/pages/News/Tech/Tech.html">Tech</a>
+        </div>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/pages/Rate/Rate/Rate.html">Rate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/Methodology/Methodology.html">Methodology</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--End Navbar-->
+    <!--End Navbar-->
+    <br />
+    <h1 id="pageHeader"><center>
+      Top News
+    </center></h1>
+    <!--Start Content-->
+    <div id="news">
+
+
+    </div>
+    <br>
+    <br>
+    <center><img src='/res/img/Line.jpg' height='1' width='600'></center>
+    <center>
+          <h5 id="title">Credits</h5>
+          <div id="content"><center><img src="/res/img/footer.jpg" width="282.256" height="335.777"></center>
+          Frontend and Backend Engineering - <a href="https://www.prathamgandhi.tech">Pratham Gandhi</a>
+          <br>
+          Design and Illustration - Samuel Schuur
+        </center>
+        <br>
+        <br>
+  <script type="text/javascript" src="../sentiment.json"></script>
+  <script type="text/javascript" src="../bias.json"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="Top.js"></script>
+  <script src="../../../modules/news.js"></script>
+  </body>
+</html>

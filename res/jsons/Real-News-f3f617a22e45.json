@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "real-news-196317",
+  "private_key_id": "f3f617a22e458e3600f4293e873560e34cd067e0",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDk7UP/MEwQyfFr\nGmHUiSSOWeAVGCbrg3nk1h2DNv19H0eYUH2IZwoJTALB9IuWexzekNjKl4MACpzS\nKC95HfH4VlUQ8Jlpt7C5YEzSnfJa3g4cRJjBJy0cNfjNWaJ4LYllH5IVDtA6Zeh/\nmZyiLLBmX/A4v7af4EuYyMLJ7UifnRBHL0fomAgfrTBA7RKtaBoy1uG8JuFCfe27\nNoVxB24MmruPq9olkN+Ag3gegMcNRHC8CaSy4KuXcUN5duLRsvVG4z6fsWoc8wrI\nGsNC0tXkawkbGtbhytO/x42Z9rpZ6Z9gHzrbaXeu32CwK943EuH2PRWNt0vSLwQN\nCfLQWU7PAgMBAAECggEADoeOksI+eaxPgcQ1ZFdl9hD3O2+CfN0l3ePHEL5rPUdA\ndIbbSM59YRStciDywRTEQs3/rHAMVPLXfDEnvjCr3F6iXIZgvkh103YsugtjR+gj\nDiE+brftUYaNaX8gZC9DsqLb0zFS/vnb1UlrGxHqCj1Zkkh8r039jk9jqYxBWTvw\nfnjAhYzBCJs+vlIqK2BJLaWLtLLCnZwMVsA9DXp+i7QTETyXC4f9yP4Soo4sEks+\nLyu1bZ1XEpesC7nLnNGdUsp8ymLfdR5OcVYIzuZGRV30smjPS3wA9XA9rPXdV5Pm\nhqxrsVe6Z+moWi2/D5CiMFlrFdCTr6Gwmhtq96blcQKBgQD6pWSMarJuSv3lTyw/\nkanquSvSFXd7r/ZKPYlfxxPe/YMh68VtTKaZwBfAuZNyFcUczrEOj1Z8s23ABif4\nhFvY5xQ6T8eOjUHyoPGXIxh0K0f4buFYwUF3SAiISwjqcLlojjb7QA1Qyg4N7woY\nY2yn3yB654DquSvlmOZZqPUbcQKBgQDp0RsE9X6Jh5y3E4wsOWkoECoxdJ6jEJDP\n6JuGvTZdiHvnOvxJkvdM+/miH0zAPklafLFkHOg2tg3/oB+Yr24uiT2cF47nCkZe\nvL/bx6adcdpYQkXhsLB6Iux3H/9tKgMQWWdZURwZITCz+ebjsCf7EYEkrqo9Q+Ly\nZjp9HY1uPwKBgCmRhoR3KZJ7I3KFV+xPByQjg636228K9sjHPeJBjP0dhEL67Co9\nXSAAqK/Q1zBDhgZKDTlB8nEJ/PiszLI9mVH2uPcWxhzRNo+7u3V6X5LcnroIAZ2L\np4TV0HxyHU9sVIOPmnS+4bZ1XDFZZI445wtMSQG5JTtIbIxOeF2EVOoxAoGAaIQX\nLtVJ9dIPxGpReydCkS0An1DA5KUwBi+07brAhXjP4eGlCoJOVzQ/NzAEj96HzZH1\nfYnKZ0Jj6YM6/HZWqyifyJljQHWAVTLMFEMfgDt3XYJqWGMxz7ayuuErvTFNY06D\nexJdnAIREjI/+kEw7fK6JpqI8I/a732w4WKHaOMCgYEAsTdkth+/X1ToGQZqrCsS\nriVSiioJ5FEDwE8LjLcoqv1NYlwJTcR+OwNQl/M8LmwF+6RYV6CTh1D64XMPnDqC\n6SOZFoO6Op/DCPLEUY0Lha6sMfDjAvddnrfjDAMIu7ML7TozG3tVxxPFk/NOzBlC\nsUdwkTAsP1oF5mk6dP/dmVw=\n-----END PRIVATE KEY-----\n",
+  "client_email": "pratham@real-news-196317.iam.gserviceaccount.com",
+  "client_id": "101528690386970630050",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/pratham%40real-news-196317.iam.gserviceaccount.com"
+}

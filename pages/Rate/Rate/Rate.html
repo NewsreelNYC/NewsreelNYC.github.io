@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rate Bias</title>
+    <link rel="stylesheet" href="../../../modules/cards.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <style>
+      #news {
+        font-family: 'Alegreya', serif;
+        font-style: 'extra-bold';
+      }
+    </style>
+    <style>
+      #articletitle {
+        font-family: 'Roboto Slab',serif;
+        margin-left: 10px;    
+        margin-right: 10px;      }
+    </style>
+    <style>
+      #descriptionText {
+        margin-left: 10px; 
+        margin-right: 10px;      }
+    </style>
+    <style>
+      #pageHeader {
+        font-family: 'Roboto Slab',serif;      }
+    </style>
+    <style>
+      #vote {
+          margin-right: 80PX;
+          margin-left: 80px;
+      }
+    </style>
+    <style>
+      #content {
+        font-family: 'Alegreya', serif;
+        font-style: 'extra-bold';
+      }
+      #title{
+        font-family: 'Roboto Slab',serif;
+      }
+    </style>
+  </head>
+  <body>
+    <!--Navbar-->
+    <a href="/index.html"><img src=../../../res/img/navbarheader.jpg height="215.87" width="1440"></a>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          News
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+          <a class="dropdown-item" href="/pages/News/Top/Top.html">Top</a>
+          <a class="dropdown-item" href="/pages/News/Politics/Politics">Politics</a>
+          <a class="dropdown-item" href="/pages/News/Sports/Sports.html">Sports</a>
+          <a class="dropdown-item" href="/pages/News/Tech/Tech.html">Tech</a>
+        </div>
+      </li>
+        <li class="nav-item">
+            <a class="nav-link" href="/pages/Rate/Rate/Rate.html">Rate</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/pages/Methodology/Methodology.html">Methodology</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!--End Navbar-->
+    <br />
+    <h1 id="pageHeader"><center>
+      Rate Bias
+    </center></h1>
+    <!--Start Content-->
+    <div id="vote">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Source Name</th>
+            <th scope="col">Current Rating</th>
+            <th scope="col">Vote</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">CNN</th>
+            <td id="CNN-Rating">Strongly Left</td>
+            <td id="CNN-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','CNN-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','CNN-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">BBC</th>
+            <td id="BBC-rating">Leaning Right</td>
+            <td id="BBC-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','BBC-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','BBC-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">The Washington Post</th>
+            <td id="WashPost-rating">Leaning Left</td>
+            <td id="WashPost-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','WashPost-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','WashPost-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">USA Today</th>
+            <td id="USAToday-rating">Neutral</td>
+            <td id="USAToday-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','USAToday-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','USAToday-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">LA Times</th>
+            <td id="LATimes-rating">Leaning Left</td>
+            <td id="LATimes-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','LATimes-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','LATimes-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Chicago Tribune</th>
+            <td id="ChiTrib-rating">Neutral</td>
+            <td id="ChiTrib-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','ChiTrib-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','ChiTrib-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">The New York Times</th>
+            <td id="NYT-rating">Leaning Left</td>
+            <td id="NYT-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','NYT-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','NYT-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">NBC News</th>
+            <td id="NBC-rating">Leaning Left</td>
+            <td id="NBC-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','NBC-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','NBC-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Newsweek</th>
+            <td id="Newsweek-rating">Leaning Left</td>
+            <td id="Newsweek-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','Newsweek-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','Newsweek-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">The New York Post</th>
+            <td id="NYP-rating">Strongly Right</td>
+            <td id="NYP-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','NYP-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','NYP-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">International Business Times</th>
+            <td id="IBT-rating">Neutral</td>
+            <td id="IBT-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','IBT-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','IBT-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Washington Times</th>
+            <td id="WashTimes-rating">Leaning Right</td>
+            <td id="WashTimes-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','WashTimes-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','WashTimes-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">US News</th>
+            <td id="USNews-rating">Leaning Left</td>
+            <td id="USNews-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','USNews-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','USNews-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">The Verge</th>
+            <td id="Verge-rating">Leaning Left</td>
+            <td id="Verge-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','Verge-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','Verge-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Forbes</th>
+            <td id="Forbes-rating">Neutral</td>
+            <td id="Forbes-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','Forbes-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','Forbes-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Business Insider</th>
+            <td id="BI-rating">Neutral</td>
+            <td id="BI-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','BI-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','BI-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Fox News</th>
+            <td id="Fox-rating">Strongly Right</td>
+            <td id="Fox-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','Fox-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','Fox-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">CBS News</th>
+            <td id="CBS-rating">Leaning Left</td>
+            <td id="CBS-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','CBS-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','CBS-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">CBS Sports</th>
+            <td id="CBSSports-rating">Leaning Left</td>
+            <td id="CBSSports-Vote"><button type="button" class="btn btn-success" onclick="agree('CBS','CBSSports-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CBS','CBSSports-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">New York Daily News</th>
+            <td id="NYDailyNews-rating">Strongly Left</td>
+            <td id="NYDailyNews-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','NYDailyNews-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','NYDailyNews-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">NPR</th>
+            <td id="NPR-rating">Leaning Left</td>
+            <td id="NPR-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','NPR-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','NPR-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Denver Post</th>
+            <td id="DenverPost-rating">Leaning Right</td>
+            <td id="DenverPost-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','DenverPost-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','DenverPost-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">The Hill</th>
+            <td id="Hill-rating">Neutral</td>
+            <td id="Hill-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','Hill-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','Hill-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">People.com</th>
+            <td id="People-rating">Strongly Left</td>
+            <td id="People-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','People-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','People-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Nola</th>
+            <td id="Nola-rating">Leaning Left</td>
+            <td id="Nola-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','Nola-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','Nola-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">Reuters</th>
+            <td id="Reuters-rating">Neutral</td>
+            <td id="Reuters-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','Reuters-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','Reuters-Vote')">Disagree</button></td>
+          </tr>
+          <tr>
+            <th scope="row">CBC News</th>
+            <td id="CBC-rating">Leaning Right</td>
+            <td id="CBC-Vote"><button type="button" class="btn btn-success" onclick="agree('CNN','CBC-Vote')">Agree</button>  <button type="button" class="btn btn-warning" onclick="disagree('CNN','CBC-Vote')">Disagree</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <script type="text/javascript" src="../../News/sentiment.json"></script>
+  <script type="text/javascript" src="../../News/bias.json"></script>
+  <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="Rate.js"></script>
+  </body>
+</html>
