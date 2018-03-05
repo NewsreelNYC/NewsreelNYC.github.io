@@ -5,10 +5,62 @@
     <title>Search</title>
     <link rel="stylesheet" href="../../../modules/cards.css" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" />
+    
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Alegreya">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Roboto+Slab">
+    <style>
+      #news {
+        font-family: 'Alegreya', serif;
+        font-style: 'extra-bold';
+      }
+    </style>
+    <style>
+      #articletitle {
+        font-family: 'Roboto Slab',serif;
+        margin-left: 10px;    
+        margin-right: 10px;      }
+    </style>
+    <style>
+      #descriptionText {
+        margin-left: 10px; 
+        margin-right: 10px;      }
+    </style>
+    <style>
+      #pageHeader {
+        font-family: 'Roboto Slab',serif;      }
+    </style>
+    <style>
+      #news {
+          margin-right: 80PX;
+          margin-left: 80px;
+      }
+    </style>
+    <style>
+      #margin {
+          margin-right: 80PX;
+          margin-left: -1px;
+      }
+    </style>
+    <style>
+      #readarticle {
+        background-color: #95a5a6;
+      }
+    </style>
+    <style>
+      #content {
+        font-family: 'Alegreya', serif;
+        font-style: 'extra-bold';
+      }
+      #title{
+        font-family: 'Roboto Slab',serif;
+      }
+    </style>
   </head>
-  <body background="../../../res/img/news-bg.jpg">
+  <body>
     <!--Navbar-->
-    <a href="/index.html"><img src=../../../res/img/navbarheader.jpg height="215.87" width="1440"></a>
+    <a href="/index.html"><img src=/res/img/navbarheader.jpg height="215.87" width="1440"></a>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -34,17 +86,34 @@
           </li>
         </ul>
       </div>
+      <div class="form-inline">
+        <input id="searchbar" class="form-control mr-sm-2" type="text" placeholder="Search">
+        <button class="btn btn-outline-secondary my-2 my-sm-0" onclick="search()">Search</button>
+      </div>
     </nav>
     <!--End Navbar-->
-    <h1><center>
+    <!--End Navbar-->
+    <br />
+    <h1 id="pageHeader"><center>
       Search Results
     </center></h1>
     <!--Start Content-->
     <div id="news">
 
 
-
     </div>
+    <br>
+    <br>
+    <center><img src='/res/img/Line.jpg' height='1' width='600'></center>
+    <center>
+          <h5 id="title">Credits</h5>
+          <div id="content"><center><img src="/res/img/footer.jpg" width="282.256" height="335.777"></center>
+          Frontend and Backend Engineering - <a href="https://www.prathamgandhi.tech">Pratham Gandhi</a>
+          <br>
+          Design and Illustration - Samuel Schuur
+        </center>
+        <br>
+        <br>
   <script type="text/javascript" src="../sentiment.json"></script>
   <script type="text/javascript" src="../bias.json"></script>
   <script src="https://www.gstatic.com/firebasejs/4.10.1/firebase.js"></script>
