@@ -31,7 +31,7 @@ fetch(req)
     console.log(response);
     var grid = "";
     if(response['articles']['2']==null){
-      grid = grid + "<div id='articletitle'><h3>Sorry, not results were found for " + query + ", please try another term</h3></div>";
+      grid = grid + "<center><div id='articletitle'><h3>Sorry, not results were found for " + query + ", please try another term</h3></div><center>";
     }
     else{
         grid = grid + "<div class='card' id='"+title+"'>";
